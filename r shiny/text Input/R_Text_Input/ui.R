@@ -18,12 +18,18 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(("Enter  Presonal Information"),
                  textInput("name", "Enter your Name"),
-                 textInput("age", "Enter your Age")
+                 textInput("age", "Enter your Age"),
+                 radioButtons("gender","Select the gender",list("Male","Female"))
     ),
     mainPanel(("Personal Information"),
               #used to output the text in UI.
               textOutput("Name"),
-              textOutput("age"))
+              textOutput("age"),
+              textOutput("gender")
+             
+              
+              
+              )
               
     
   )

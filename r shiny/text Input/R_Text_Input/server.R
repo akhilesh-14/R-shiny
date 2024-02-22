@@ -14,6 +14,7 @@ function(input, output, session) {
   # reactive code for printing text.
   output$Name <- renderText(input$name)
   output$age <- renderText(input$age)
+  output$gender <- renderText(input$gender)
   
   
 }
