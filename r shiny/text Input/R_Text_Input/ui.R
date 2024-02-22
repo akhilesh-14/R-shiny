@@ -14,7 +14,7 @@ shinyUI(fluidPage(
   # Application title
   titlePanel("Text Input in R shiny"),
   
-  # Sidebar
+  # Sidebar Layout
   sidebarLayout(
     sidebarPanel(("Enter  Presonal Information"),
                  textInput("name", "Enter your Name"),
